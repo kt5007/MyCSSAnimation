@@ -1,0 +1,22 @@
+body {
+  padding: 64px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+
+  /* 変化の途中 */
+  transition-property: transform, background;
+  /* transition-property: all; 推奨でない他のやつもきいてしまう*/
+  transition-duration: 1s;
+  /* 回転軸の指定 */
+  transform-origin: 1s;
+}
+
+/* 変化後 */
+.box:hover {
+  transform: translateX(30px);
+  background: skyblue;
+}
