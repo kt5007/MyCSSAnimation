@@ -1,0 +1,20 @@
+body {
+  padding: 64px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+
+  /* 変化の途中 */
+  transition-property: transform;
+  /* 1s立ってから1s動く */
+  transition-duration: 1s;
+  transition-delay: 1s;
+}
+
+/* 変化後 */
+.box:hover {
+  transform: translateX(30px);
+}
