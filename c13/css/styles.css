@@ -1,0 +1,36 @@
+body {
+  padding: 64px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+
+  animation-name: move;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  /* 終わったそのままの状態 */
+  /* animation-fill-mode: forwards; */
+  /* 繰り返し回数 */
+  /* animation-iteration-count: 2; */
+  /* 無限に繰り返す */
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  /* 0s */
+  0% {
+    transform: none;
+  }
+
+  /* 1.6s */
+  80% {
+    transform: translateX(200px) rotate(360deg);
+  }
+
+  /* 2s */
+  100% {
+    transform: translateX(300px) rotate(360deg);
+  }
+}
