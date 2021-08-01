@@ -1,0 +1,24 @@
+body {
+  padding: 64px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+
+  /* 変化の途中 */
+  /* transition-property: transform; */
+  /* 1s立ってから1s動く */
+  /* transition-duration: .3s;
+  transition-timing-function: ease-out; */
+
+  /* duration delayになる 2つ時間を書くと */
+  transition: transform .3s ease-out 1s, bachgroud .5s;
+}
+
+/* 変化後 */
+.box:hover {
+  transform: translateX(30px);
+  background: skyblue;
+}
